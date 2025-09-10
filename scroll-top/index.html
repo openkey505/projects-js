@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll to Top</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            position: relative;
+        }
+
+        .btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 60px;
+            background-color: aqua;
+            margin-right: 100px;
+            position:fixed;
+            cursor: pointer;
+        }
+
+        h2 {
+            margin-top: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">This is Top</h1>
+
+    <div class="btn" id="toTop"><span>Go</span></div> 
+
+    <h2 style="text-align: center;">This is Bottom</h2>
+
+    <script>
+        document.getElementById('toTop').addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
