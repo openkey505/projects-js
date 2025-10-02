@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: rgb(20, 55, 151);
+            border-radius: 20px;
+            transition: all 3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box"></div>
+
+    <script>
+        let box = document.getElementById("box");
+
+        function changeColor() {
+            box.style.backgroundColor = "rgb(25, 68, 187)"
+            box.style.width = "50%";
+        }
+
+        function changeColor2() {
+            box.style.backgroundColor = "rgb(44, 94, 233)"
+            box.style.width = "75%";
+        }
+
+        function changeColor3() {
+            box.style.backgroundColor = "rgb(71, 117, 245)"
+            box.style.width = "100%";
+        }
+
+        setTimeout(changeColor, 3000)
+        setTimeout(changeColor2, 7000)
+        setTimeout(changeColor3, 10000)
+    </script>
+</body>
+</html>
